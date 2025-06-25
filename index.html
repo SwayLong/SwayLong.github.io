@@ -1,82 +1,136 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>你的名字 - 个人主页</title>
+    <title>Ziwei Long - PhD Applicant in CV/AI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f9f9f9;
         }
         header {
-            background: #333;
-            color: #fff;
             text-align: center;
-            padding: 2rem;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #333;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
         }
         h1 {
             margin: 0;
+            font-size: 2em;
         }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        .section {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-        }
-        a {
+        h2 {
             color: #333;
-            text-decoration: none;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
         }
-        a:hover {
-            text-decoration: underline;
+        ul {
+            padding-left: 20px;
         }
         footer {
             text-align: center;
-            padding: 1rem;
-            background: #333;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 10px;
+            background-color: #f0f0f0;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>欢迎来到 [你的名字] 的个人主页</h1>
-        <p>前端开发者 | 数据爱好者 | 技术博客作者</p>
+        <h1>Ziwei Long</h1>
+        <p>Email: zwlong@tongji.edu.cn | Phone: +86-19809361711 | Address: No. 4800 Cao'an Highway, Jiading District, Shanghai 201804, China</p>
     </header>
-    <div class="container">
-        <div class="section">
-            <h2>关于我</h2>
-            <p>你好！我是 [你的名字]，一名热爱技术的开发者，专注于前端开发和数据可视化。我喜欢探索新的技术和分享知识。</p>
-        </div>
-        <div class="section">
-            <h2>我的项目</h2>
-            <ul>
-                <li><a href="https://github.com/你的GitHub用户名/项目1">项目1</a> - 项目简介</li>
-                <li><a href="https://github.com/你的GitHub用户名/项目2">项目2</a> - 项目简介</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>联系方式</h2>
-            <p>Email: <a href="mailto:你的邮箱@example.com">你的邮箱@example.com</a></p>
-            <p>GitHub: <a href="https://github.com/你的GitHub用户名">github.com/你的GitHub用户名</a></p>
-            <p>博客: <a href="你的博客地址">你的博客地址</a></p>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>B.Eng. in Artificial Intelligence</strong><br>
+        Tongji University, Shanghai, China<br>
+        08/2020 – 06/2024<br>
+        GPA: 83.04 / 100</p>
+        <p><strong>Relevant Courses:</strong> Machine Learning, Deep Learning, Image Processing & Machine Vision, Embedded Systems, Stochastic Process, Feedback Control Theory</p>
+    </section>
+    <section id="research">
+        <h2>Research Experience</h2>
+        <p><strong>Research Assistant</strong><br>
+        MIAS Group, Tongji University<br>
+        07/2024 – 06/2025 (expected)</p>
+        <ul>
+            <li>Supported research administration, including assisting in funding applications and project documentation.</li>
+            <li>Contributed to academic writing through manuscript editing and experimental assistance.</li>
+        </ul>
+    </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>Yu Han*, <strong>Ziwei Long*</strong>, et al. "Generalized Correspondence Matching via Flexible Hierarchical Refinement and Patch Descriptor Distillation." <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024.</li>
+            <li>Hongbo Zhao, <strong>Ziwei Long</strong>, et al. "A Birotation Solution for Relative Pose Problems." <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)</em> (under review).</li>
+            <li>Sicen Guo, <strong>Ziwei Long</strong>, et al. "LIX: Implicitly Infusing Spatial Geometric Prior Knowledge into Visual Semantic Segmentation for Autonomous Driving." <em>IEEE Transactions on Image Processing (T-IP)</em> (under review).</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p><strong>Novel Solution for Camera Relative Pose Estimation</strong><br>
+        Tongji University MIAS Group<br>
+        09/2024 – 04/2025</p>
+        <ul>
+            <li>Optimized code, achieving a 10× speedup in runtime efficiency by leveraging matrix sparsity.</li>
+            <li>Evaluated pose estimation on the YFCC100M and ScanNet datasets.</li>
+            <li>Conducted qualitative experiments on the KITTI dataset for monocular visual odometry.</li>
+            <li>Participated in ablation studies and robustness analyses.</li>
+        </ul>
+        <p><strong>Implicit Geometric Data Fusion for Semantic Segmentation</strong><br>
+        Tongji University MIAS Group<br>
+        12/2024 – 03/2025</p>
+        <ul>
+            <li>Cleaned the NuImages dataset and conducted comparative experiments on the refined dataset.</li>
+            <li>Created visualization figures and generated statistical analyses of training overhead metrics.</li>
+        </ul>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> English (IELTS Overall 6.5: L 6.0, R 8.0, W 5.5, S 5.5), Mandarin (native)</li>
+            <li><strong>Computer:</strong> Microsoft Office Suite</li>
+            <li><strong>Programming:</strong> Python, C++, LaTeX</li>
+        </ul>
+    </section>
     <footer>
-        <p>&copy; 2025 [你的名字]. 保留所有权利。</p>
+        <p>&copy; 2025 Ziwei Long. All rights reserved.</p>
+        <p>Last Updated: June 25, 2025</p>
     </footer>
 </body>
 </html>
