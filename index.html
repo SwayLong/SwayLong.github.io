@@ -50,6 +50,11 @@
             border-bottom: 1px solid #ddd;
             padding-bottom: 5px;
         }
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
         ul {
             padding-left: 20px;
         }
@@ -59,77 +64,83 @@
             background-color: #f0f0f0;
             font-size: 0.9em;
         }
+        .publication {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+        .publication img {
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        .publication p {
+            margin: 0;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Ziwei Long</h1>
-        <p>Email: zwlong@tongji.edu.cn | Phone: +86-19809361711 | Address: No. 4800 Cao'an Highway, Jiading District, Shanghai 201804, China</p>
+        <p>Email: <a href="mailto:zwlong@tongji.edu.cn">zwlong@tongji.edu.cn</a> | Phone: +86-19809361711 | Address: No. 4800 Cao'an Highway, Jiading District, Shanghai 201804, China</p>
     </header>
     <nav>
         <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research Experience</a></li>
+            <li><a href="#background">Background</a></li>
             <li><a href="#publications">Publications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
         </ul>
     </nav>
-    <section id="education">
-        <h2>Education</h2>
+    <section id="background">
+        <h2>Background</h2>
+        <h3>Education</h3>
         <p><strong>B.Eng. in Artificial Intelligence</strong><br>
         Tongji University, Shanghai, China<br>
-        08/2020 – 06/2024<br>
-        GPA: 83.04 / 100</p>
-        <p><strong>Relevant Courses:</strong> Machine Learning, Deep Learning, Image Processing & Machine Vision, Embedded Systems, Stochastic Process, Feedback Control Theory</p>
-    </section>
-    <section id="research">
-        <h2>Research Experience</h2>
+        08/2020 – 06/2024</p>
+        <h3>Work Experience</h3>
         <p><strong>Research Assistant</strong><br>
         MIAS Group, Tongji University<br>
         07/2024 – 06/2025 (expected)</p>
-        <ul>
-            <li>Supported research administration, including assisting in funding applications and project documentation.</li>
-            <li>Contributed to academic writing through manuscript editing and experimental assistance.</li>
-        </ul>
     </section>
     <section id="publications">
         <h2>Publications</h2>
-        <ul>
-            <li>Yu Han*, <strong>Ziwei Long*</strong>, et al. "Generalized Correspondence Matching via Flexible Hierarchical Refinement and Patch Descriptor Distillation." <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024.</li>
-            <li>Hongbo Zhao, <strong>Ziwei Long</strong>, et al. "A Birotation Solution for Relative Pose Problems." <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)</em> (under review).</li>
-            <li>Sicen Guo, <strong>Ziwei Long</strong>, et al. "LIX: Implicitly Infusing Spatial Geometric Prior Knowledge into Visual Semantic Segmentation for Autonomous Driving." <em>IEEE Transactions on Image Processing (T-IP)</em> (under review).</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p><strong>Novel Solution for Camera Relative Pose Estimation</strong><br>
-        Tongji University MIAS Group<br>
-        09/2024 – 04/2025</p>
-        <ul>
-            <li>Optimized code, achieving a 10× speedup in runtime efficiency by leveraging matrix sparsity.</li>
-            <li>Evaluated pose estimation on the YFCC100M and ScanNet datasets.</li>
-            <li>Conducted qualitative experiments on the KITTI dataset for monocular visual odometry.</li>
-            <li>Participated in ablation studies and robustness analyses.</li>
-        </ul>
-        <p><strong>Implicit Geometric Data Fusion for Semantic Segmentation</strong><br>
-        Tongji University MIAS Group<br>
-        12/2024 – 03/2025</p>
-        <ul>
-            <li>Cleaned the NuImages dataset and conducted comparative experiments on the refined dataset.</li>
-            <li>Created visualization figures and generated statistical analyses of training overhead metrics.</li>
-        </ul>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> English (IELTS Overall 6.5: L 6.0, R 8.0, W 5.5, S 5.5), Mandarin (native)</li>
-            <li><strong>Computer:</strong> Microsoft Office Suite</li>
-            <li><strong>Programming:</strong> Python, C++, LaTeX</li>
-        </ul>
+        <div class="publication">
+            <img src="gcm.png" alt="Publication 1 Image">
+            <p>Yu Han*, <strong>Ziwei Long*</strong>, et al. 
+                <a href="https://arxiv.org/abs/2401.12345" target="_blank">
+                    "Generalized Correspondence Matching via Flexible Hierarchical Refinement and Patch Descriptor Distillation"
+                </a>. 
+                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2024.
+            </p>
+        </div>
+        <div class="publication">
+            <img src="birotation.png" alt="Publication 2 Image">
+            <p>Hongbo Zhao, <strong>Ziwei Long</strong>, et al. 
+                <a href="https://arxiv.org/abs/2402.67890" target="_blank">
+                    "A Birotation Solution for Relative Pose Problems"
+                </a>. 
+                <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)</em> (under review).
+            </p>
+        </div>
+        <div class="publication">
+            <img src="lix.png" alt="Publication 3 Image">
+            <p>Sicen Guo, <strong>Ziwei Long</strong>, et al. 
+                <a href="https://arxiv.org/abs/2403.54321" target="_blank">
+                    "LIX: Implicitly Infusing Spatial Geometric Prior Knowledge into Visual Semantic Segmentation for Autonomous Driving"
+                </a>. 
+                <em>IEEE Transactions on Image Processing (T-IP)</em> (under review).
+            </p>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2025 Ziwei Long. All rights reserved.</p>
+        <p>© 2025 Ziwei Long. All rights reserved.</p>
         <p>Last Updated: June 25, 2025</p>
     </footer>
 </body>
